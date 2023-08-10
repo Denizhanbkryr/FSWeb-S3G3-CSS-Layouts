@@ -1,96 +1,134 @@
 /* CSS stillerinizi buraya girin */
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header h2 {
-    padding-left: 40px;
+  padding-left: 40px;
 }
 
 nav {
-    display: flex;
+  display: flex;
 }
 nav a {
-    border: 1px solid black;
-    text text-decoration: none;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-    align-content: center;
-    color: black;
-
-
+  border: 1px solid black;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  align-content: center;
+  color: black;
 }
 
 main {
-    width: 133vh;
-    height: 80vh;
-    margin: auto;
-    background-image: url("https://picsum.photos/800/500");
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  width: 80vw;
+  height: 50vw;
+  margin: auto;
+  background-image: url("https://picsum.photos/800/500");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 main a {
-    
-    background-color:  white;
-    border: 1px solid black;
-    text text-decoration: none;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-    align-content: center;
-   
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  align-content: center;
 }
 
 footer a {
-    display: block;
-    margin: auto;
-    background-color: white;
-    border: 1px solid black;
-    text text-decoration: none;
-    width: 100px;
-    padding: 10px 0;
-    text-align: center;
-    align-content: center;
+  display: block;
+  margin: auto;
+  background-color: white;
+  border: 1px solid black;
+  text-decoration: none;
+  width: 100px;
+  padding: 10px 0;
+  text-align: center;
+  align-content: center;
 }
 section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 5% 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 5% 0;
 }
 
 section div {
-    width: 30vw;
-    margin-bottom: 3%;
+  width: 30vw;
+  margin-bottom: 3%;
 }
 
 section img {
-    width: 100%;
+  width: 100%;
 }
 
 section h3 {
-    text-align: center;
+  text-align: center;
 }
 
 footer {
-    background-color: gray;
-    padding: 5%;
+  background-color: gray;
+  padding: 5%;
 }
 
 .spacer {
-    height: 3vw;
+  height: 3vw;
 }
 
+@media screen and (max-width: 500px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
+
+  section {
+    justify-content: space-evenly;
+  }
+  section div {
+    width: 45vw;
+  }
+
+  header h2 {
+    padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+
+  main {
+    width: 90vw;
+    height: 56vw;
+    margin-top: 3%;
+  }
+}
